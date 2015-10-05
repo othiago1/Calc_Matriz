@@ -12,6 +12,44 @@ namespace WindowsFormsApp
         public double[,] array;
         public double det;
 
+        public static Matriz escalar(double value, Matriz r, string operation) {
+            for (int i = 0; i < r.rows; i++) {
+                for (int j = 0; j < r.columns; j++) {
+                    // EASTER EGG :D //
+                    switch (operation) {
+                        case "sum":
+                            r.setValue(i, j, r.array[i, j] + value);
+                            break;
+                        case "sub":
+                            r.setValue(i, j, r.array[i, j] - value);
+                            break;
+                        case "mul":
+                            r.setValue(i, j, r.array[i, j] * value);
+                            break;
+                        case "div":
+                            r.setValue(i, j, r.array[i, j] / value);
+                            break;
+                        case "res":
+                            r.setValue(i, j, r.array[i, j] % value);
+                            break;
+                        case "sqrt":
+                            r.setValue(i, j, Math.Sqrt(r.array[i, j]));
+                            break;
+                        case "pow":
+                            r.setValue(i, j, Math.Pow(r.array[i, j], value));
+                            break;
+                        case "log":
+                            r.setValue(i, j, Math.Log10(r.array[i, j]));
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+            return r;
+        }
+
+
         public double getDiagonal(int i, int j, bool order) {
             double r = array[i, j];
             i++;

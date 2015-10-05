@@ -1,9 +1,0 @@
-c:\users\gabriel.souza\documents\visual studio 2013\Projects\WindowsFormsApp\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe.config
-c:\users\gabriel.souza\documents\visual studio 2013\Projects\WindowsFormsApp\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe
-c:\users\gabriel.souza\documents\visual studio 2013\Projects\WindowsFormsApp\WindowsFormsApp\bin\Debug\WindowsFormsApp.pdb
-c:\users\gabriel.souza\documents\visual studio 2013\Projects\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csprojResolveAssemblyReference.cache
-c:\users\gabriel.souza\documents\visual studio 2013\Projects\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
-c:\users\gabriel.souza\documents\visual studio 2013\Projects\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.GenerateResource.Cache
-c:\users\gabriel.souza\documents\visual studio 2013\Projects\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
-c:\users\gabriel.souza\documents\visual studio 2013\Projects\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
-c:\users\gabriel.souza\documents\visual studio 2013\Projects\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form1.resources

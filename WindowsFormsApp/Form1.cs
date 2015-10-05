@@ -20,6 +20,7 @@ namespace WindowsFormsApp
             m.setValue(0, 1, 2);
             m.setValue(1, 0, 4);
             m.setValue(1, 1, 5);
+            Console.WriteLine(m.getAllValues());
 
             Matriz m2 = new Matriz(2, 3);
             m2.setValue(0, 0, 1);
@@ -28,9 +29,9 @@ namespace WindowsFormsApp
             m2.setValue(1, 0, 4);
             m2.setValue(1, 1, 5);
             m2.setValue(1, 2, 1);
+            //Console.WriteLine(m2.getAllValues());
 
-            Console.WriteLine(m.getAllValues());
-            Console.WriteLine(Matriz.multiply(m,m2).getAllValues());
+            Console.WriteLine(Matriz.escalar(2, m, "res").getAllValues());
         }
     }
 }
