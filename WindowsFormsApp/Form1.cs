@@ -12,26 +12,26 @@ namespace WindowsFormsApp
 {
     public partial class Form1 : Form
     {
+
+
+
+
         public Form1()
         {
             InitializeComponent();
-            Matriz m = new Matriz(2, 2);
-            m.setValue(0, 0, 1);
-            m.setValue(0, 1, 2);
-            m.setValue(1, 0, 4);
-            m.setValue(1, 1, 5);
-            Console.WriteLine(m.getAllValues());
 
-            Matriz m2 = new Matriz(2, 3);
-            m2.setValue(0, 0, 1);
-            m2.setValue(0, 1, 2);
-            m2.setValue(0, 2, 2);
-            m2.setValue(1, 0, 4);
-            m2.setValue(1, 1, 5);
-            m2.setValue(1, 2, 1);
-            //Console.WriteLine(m2.getAllValues());
+            Matriz example = new Matriz(2, 10, "i^2 - j^2");
 
-            Console.WriteLine(Matriz.escalar(2, m, "res").getAllValues());
+            Console.WriteLine(example.getAllValues());
+            Console.WriteLine(Matriz.calculateDet(example));
+            Console.WriteLine("Rotate"+Matriz.rotate(example,90).getAllValues());
+            Console.WriteLine("Translate"+(Matriz.translate(example, 2, 2).getAllValues()));
+            Console.WriteLine("Scale"+Matriz.scale(example, 2, 2).getAllValues());
+            Console.WriteLine("Squared"+Matriz.multiply(example, example.getTransposta()).getAllValues());
+            Console.WriteLine("Sum by itself"+Matriz.somarMatriz(example, example).getAllValues());
+            Console.WriteLine("Subtrated by itself"+Matriz.subtrairMatriz(example, example).getAllValues());
+
+
         }
     }
 }
